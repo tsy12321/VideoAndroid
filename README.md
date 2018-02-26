@@ -1,11 +1,13 @@
 # Video
 
+[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 > Android视频录制，自定义视频大小，支持触摸对焦、两指放大缩小、切换摄像头. 采用FFmpeg对进行视频帧剪裁旋转切割，包体积4M
 
 
 ## 1 前言
 
-[版本更新记录](https://gitlab.oneitfarm.com/idg-public/VideoAndroid/tags)
+[版本更新记录](https://github.com/tsy12321/VideoAndroid/releases)
 
 参考开源项目：
 
@@ -102,8 +104,8 @@ mRecorder.getRecordingTime()
 
 ## 4 预览
 
-![](https://gitlab.oneitfarm.com/idg-public/VideoAndroid/raw/master/preview/1.jpg)
-![](https://gitlab.oneitfarm.com/idg-public/VideoAndroid/raw/master/preview/2.jpg)
-![](https://gitlab.oneitfarm.com/idg-public/VideoAndroid/raw/master/preview/3.jpg)
+![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/1.jpg)
+![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/2.jpg)
+![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/3.jpg)
 
 
