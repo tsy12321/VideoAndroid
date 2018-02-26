@@ -5,7 +5,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/black">
 
-    <com.ci123.sdk.video.CameraPreviewView
+    <com.tsy.sdk.video.CameraPreviewView
         android:id="@+id/camera_preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -19,7 +19,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"/>
 
-    <com.ci123.videodemo.RecorderCircleView
+    <com.tsy.videodemo.RecorderCircleView
         android:id="@+id/recorder_circle_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

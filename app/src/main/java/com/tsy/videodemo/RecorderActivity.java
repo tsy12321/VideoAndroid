@@ -1,4 +1,4 @@
-package com.ci123.videodemo;
+package com.tsy.videodemo;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -16,10 +16,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.ci123.sdk.video.CameraHelper;
-import com.ci123.sdk.video.CameraPreviewView;
-import com.ci123.sdk.video.MyOrientationDetector;
-import com.ci123.sdk.video.Recorder;
+import com.tsy.sdk.video.CameraHelper;
+import com.tsy.sdk.video.CameraPreviewView;
+import com.tsy.sdk.video.MyOrientationDetector;
+import com.tsy.sdk.video.Recorder;
 
 import org.bytedeco.javacv.FrameFilter;
 import org.bytedeco.javacv.FrameRecorder;
@@ -137,7 +137,7 @@ public class RecorderActivity extends BaseActivity implements View.OnTouchListen
 
         //初始化摄像头
         mCamera = CameraHelper.getCamera(this, mCameraFace);       //默认打开后置摄像头
-        String path = Environment.getExternalStorageDirectory() + "/a.com.ci123.videodemo/" + System.currentTimeMillis() + ".mp4";  //存储路径
+        String path = Environment.getExternalStorageDirectory() + "/a.com.tsy.videodemo/" + System.currentTimeMillis() + ".mp4";  //存储路径
 
         //初始化摄像预览界面
         mCameraPreviewView = (CameraPreviewView) findViewById(R.id.camera_preview);

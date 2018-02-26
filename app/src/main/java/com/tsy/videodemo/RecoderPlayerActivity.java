@@ -1,4 +1,4 @@
-package com.ci123.videodemo;
+package com.tsy.videodemo;
 
 import android.Manifest;
 import android.content.Context;
@@ -65,8 +65,8 @@ public class RecoderPlayerActivity extends BaseActivity {
             public void hasPermission(List<String> allPerms) {
                 if(mVideoPath.contains("http")) {       //网络视频
                     String localFilename = MD5Utils.getMd5(mVideoPath);
-                    final String path = Environment.getExternalStorageDirectory() + "/a.com.ci123.videodemo/" + localFilename + ".mp4";  //存储路径
-                    String tempPath = Environment.getExternalStorageDirectory() + "/a.com.ci123.videodemo/" + localFilename + "_temp.mp4";  //存储下载路径
+                    final String path = Environment.getExternalStorageDirectory() + "/a.com.tsy.videodemo/" + localFilename + ".mp4";  //存储路径
+                    String tempPath = Environment.getExternalStorageDirectory() + "/a.com.tsy.videodemo/" + localFilename + "_temp.mp4";  //存储下载路径
 
                     if (new File(path).exists()) {          //有缓存
                         mVideoPath = path;

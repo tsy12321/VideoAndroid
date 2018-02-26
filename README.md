@@ -106,6 +106,5 @@ mRecorder.getRecordingTime()
 
 ![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/1.jpg)
 ![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/2.jpg)
-![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/3.jpg)
 
 

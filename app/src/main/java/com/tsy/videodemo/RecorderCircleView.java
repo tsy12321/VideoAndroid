@@ -1,4 +1,4 @@
-package com.ci123.videodemo;
+package com.tsy.videodemo;
 
 import android.content.Context;
 import android.content.res.TypedArray;

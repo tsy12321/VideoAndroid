@@ -1,4 +1,4 @@
-package com.ci123.videodemo;
+package com.tsy.videodemo;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.ci123.sdk.video;
+package com.tsy.sdk.video;
 
 import android.app.Activity;
 import android.content.Context;
