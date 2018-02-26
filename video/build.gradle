@@ -1,8 +1,13 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+apply plugin: 'com.novoda.bintray-release'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 15
@@ -18,6 +23,25 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:support-v4:25.1.0'
     compile fileTree(dir:'libs', include:['*.jar'])
+}
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
+//运行命令 ./gradlew clean build bintrayUpload
+publish {
+    userOrg = 'tangsiyuan'
+    groupId = 'com.tsy.video'
+    artifactId = 'video-sdk'
+    publishVersion = '1.0.0'
+    desc = '小视频录制SDK，基于OpenCV+FFmpeg'
+    website = 'https://github.com/tsy12321/VideoAndroid'
+    dryRun = false
+    bintrayUser = properties.getProperty('bintrayUser');
+    bintrayKey = properties.getProperty('bintrayKey');
 }

@@ -1,11 +1,17 @@
 # Video
 
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Download](https://api.bintray.com/packages/tangsiyuan/maven/video-sdk/images/download.svg) ](https://bintray.com/tangsiyuan/maven/video-sdk/_latestVersion)
 
 > Android视频录制，自定义视频大小，支持触摸对焦、两指放大缩小、切换摄像头. 采用FFmpeg对进行视频帧剪裁旋转切割，包体积4M
 
-
 ## 1 前言
+
+功能简介：
+- 视频录制、播放
+- 自定义视频大小
+- 翻转摄像头、翻转后图像翻转功能
+- 触摸对焦、两指放大缩小
 
 [版本更新记录](https://github.com/tsy12321/VideoAndroid/releases)
 
@@ -19,24 +25,15 @@
 
 ## 2 接入SDK
 
-将video的aar包放到项目中的libs下，然后在gradle中添加
+在gradle中添加
 
 ```
-android {
-    ...
-}
-
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
+...
 dependencies {
     ...
-
-    compile(name:'video-1.0.0', ext:'aar')
+    compile 'com.tsy.video:video-sdk:1.0.0'
 }
+...
 
 ```
 
@@ -108,3 +105,26 @@ mRecorder.getRecordingTime()
 ![](https://github.com/tsy12321/VideoAndroid/blob/master/preview/2.jpg)
 
 
+## About Me
+简书地址：http://www.jianshu.com/users/21716b19302d/latest_articles
+
+微信公众号
+
+![我的公众号](https://github.com/tsy12321/PayAndroid/blob/master/wxmp_avatar.jpg)
+
+License
+-------
+
+    Copyright 2017 SY.Tang
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
