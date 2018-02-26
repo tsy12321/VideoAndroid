@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VideoAndroid</string>
+
+    <!--permission strings-->
+    <string name="permission_deny_again_title">权限设置</string>
+    <string name="permission_deny_again_positive">设置</string>
+    <string name="permission_deny_again_nagative">取消</string>
+</resources>
